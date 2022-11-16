@@ -4,23 +4,36 @@ body{
 }
 
 header{
-    background: #89CFF0;
+    background: #89CFFF;
+    margin:15px;
+    padding:10px;
 }
 
 nav ul{
     margin:0;
     padding: 0;
-    list-style: none;
+    display:flex;
+}
+
+nav li:first-child{
+    display:inline-table;
+    margin:0
 }
 
 nav li{
-    display: inline-block;
+    display: inline-table;
+    margin-left: -2;
 }
 
 nav a{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:30;
     color: Blue;
     text-decoration: none;
+}
+
+.navcontainer{
+    display:flex;
+    justify-content: center;
 }
 
 .container{
@@ -35,4 +48,11 @@ nav a{
 .text{
     font-size: 20px;
     padding-left: 10px;
+}
+
+.navbox{
+    text-align: center;
+    width: 150;
+    padding:10;
+    border:2px solid darkblue;
 }
