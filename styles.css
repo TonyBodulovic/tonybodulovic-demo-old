@@ -17,7 +17,7 @@ body{
 
 header{
     background: #007CC7;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 25px 25px 0px 0px;
     margin:15px;
     margin-top: 20px;
     margin-bottom: 5px;
