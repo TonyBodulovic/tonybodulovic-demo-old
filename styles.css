@@ -1,5 +1,42 @@
 body{
     margin:0;
-    background: pink;
-    text-align:center;
+    background: lightcyan;
+}
+
+header{
+    background: #89CFF0;
+}
+
+nav ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav a{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: Blue;
+    text-decoration: none;
+}
+
+.container{
+    width:80%;
+    margin: 0 auto;
+}
+
+.image{
+    scale:100%;
+}
+
+.text{
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.test{
+    font-size: 100px;
 }
