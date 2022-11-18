@@ -4,6 +4,7 @@ body{
 
 header{
     background: #007CC7;
+    border-radius: 25px 25px 25px 25px;
     margin:15px;
     padding:10px;
 }
@@ -59,7 +60,7 @@ nav a{
 .navbox:hover{
     color: black;
     background-image:radial-gradient(white,#89CFFF);
-    transition: .7s;
+    transition-duration: .7s;
 }
 
 
