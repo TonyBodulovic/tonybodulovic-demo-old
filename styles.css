@@ -1,10 +1,9 @@
 body{
-    margin:0;
-    background: lightcyan;
+    background-image: linear-gradient(to bottom,#12232E, #203647);
 }
 
 header{
-    background: #89CFFF;
+    background: #007CC7;
     margin:15px;
     padding:10px;
 }
@@ -27,7 +26,7 @@ nav li{
 
 nav a{
     font-size:30;
-    color: Blue;
+    color: #EEFBFB;
     text-decoration: none;
 }
 
@@ -54,5 +53,18 @@ nav a{
     text-align: center;
     width: 150;
     padding:10;
-    border:2px solid darkblue;
+    border:2px solid #4DA8DA;
+}
+
+.navbox:hover{
+    color: black;
+    background-image:radial-gradient(white,#89CFFF);
+    transition: .7s;
+}
+
+
+.colorpalette{
+    padding:10;
+    background-color: white;
+    font-size: 30;
 }
