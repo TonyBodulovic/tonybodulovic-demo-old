@@ -52,6 +52,7 @@ nav a{
 }
 
 .navbox{
+    cursor: pointer;
     text-align: center;
     width: 150;
     padding:10;
@@ -65,9 +66,26 @@ nav a{
 }
 
 .colorpalette{
+    display: auto;
     padding:10;
     background-color: lightgray;
     border: 5px solid black;
     font-size: 30;
 }
 
+.HomeContent{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.ResumeContent{
+    display:none;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.ContactContent{
+    display:none;
+    margin-top: 30px;
+    font-size: 30px;
+}

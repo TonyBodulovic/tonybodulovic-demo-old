@@ -1,4 +1,12 @@
-function myfunction()
+var currentShown = "HomeContent";
+
+function show(id)
 {
-    alert("Testing my function!")
+    hide(currentShown);
+    document.getElementById(id).style.display = "block";
+    currentShown=id;
+}
+
+function hide(id){
+    document.getElementById(currentShown).style.display = "none";
 }
