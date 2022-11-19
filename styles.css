@@ -51,20 +51,6 @@ nav a{
     justify-content: center;
 }
 
-.container{
-    width:80%;
-    margin: 0 auto;
-}
-
-.image{
-    scale:100%;
-}
-
-.text{
-    font-size: 20px;
-    padding-left: 10px;
-}
-
 .navbox{
     text-align: center;
     width: 150;
@@ -78,9 +64,10 @@ nav a{
     transition-duration: .7s;
 }
 
-
 .colorpalette{
     padding:10;
-    background-color: white;
+    background-color: lightgray;
+    border: 5px solid black;
     font-size: 30;
 }
+
