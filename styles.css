@@ -2,21 +2,28 @@
 Color Palette:
 
 Dark Blue:          #12232E
-Lighter Blue:       #007CC7
-Lightest Blue:      #4DA8DA
+Light Blue:         #007CC7
+Lighter Blue:       #4DA8DA
 
 Dark Blue Shadow:   #203647
 Light Blue Shadow:  #EEFBFB
 
 */
 
+:root{
+    --darkblue:#12232E;
+    --lightblue:#007CC7;
+    --lighterblue:#4DA8DA;
+    --darkblueshadow:#203647;
+    --lightblueshadow:#EEFBFB;
+}
 
 body{
-    background-image: linear-gradient(to bottom,#12232E, #203647);
+    background-image: linear-gradient(to bottom,var(--lightblue), var(--lighterblue));
 }
 
 header{
-    background: #007CC7;
+    background: var(--darkblueshadow);
     width:60%;
     border-radius: 25px 25px 25px 25px;
     border: 2px solid black;
@@ -44,7 +51,7 @@ nav li{
 
 nav a{
     font-size:30;
-    color: #EEFBFB;
+    color: white;
     text-decoration: none;
 }
 
@@ -58,13 +65,13 @@ nav a{
     text-align: center;
     width: 150;
     padding:10;
-    border:2px solid #4DA8DA;
+    border:2px solid black;
 }
 
 .navbox:hover{
     color: black;
-    background-image:radial-gradient(white,#89CFFF);
-    transition-duration: .7s;
+    background-image:radial-gradient(var(--lighterblue),var(--lightblue));
+    transition-duration: .2s;
 }
 
 .colorpalette{
@@ -75,23 +82,25 @@ nav a{
     font-size: 30;
 }
 
-.HomeContent{
+.Content{
+    display: none;
     margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
     font-size: 30px;
     font-size: 30;
+    border-radius: 10px 10px 10px 10px;
     border: 2px solid black;
-    background-color: #007CC7;
-    color:black;
+    background-color: gray;
+    text-align: center;
 }
 
-.ResumeContent{
-    display:none;
-    margin-top: 30px;
-    font-size: 30px;
+.Content h1{
+    color: black;
+    text-align: center;
+    font-size: 60;
 }
 
-.ContactContent{
-    display:none;
-    margin-top: 30px;
-    font-size: 30px;
+.Content p{
+    color:#203647;
 }
