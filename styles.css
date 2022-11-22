@@ -108,3 +108,20 @@ nav a{
     color:var(--darkblueshadow);
     font-size:30px;
 }
+
+.Content img{
+    width: 100%;
+    max-width: 400;
+    height: auto;
+
+    border: 2px solid black;
+}
+
+.ImageContainer{
+    display: flex;
+    margin-block: 10px;
+}
+
+.ImageContainer div{
+    margin:10px;
+}
