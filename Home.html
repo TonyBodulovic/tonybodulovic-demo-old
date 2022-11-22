@@ -12,12 +12,15 @@
 </head>
 
 <body>
+
+    <!--Navigation Bar-->
+
     <header>
         <div class="navcontainer">
             <nav>
                 <ul>
                     <li>
-                        <a href="/tonybodulovic-demo/Home">
+                        <a onclick="show('HomeContent')">
                             <div class="navbox">
                                 Home
                             </div>
@@ -25,14 +28,21 @@
                     </li>
                     
                     <li>
-                        <a href="#">
+                        <a onclick="show('ResumeContent')">
                             <div class="navbox">
                                 Resume
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="/tonybodulovic-demo/contact">
+                        <a onclick="show('GitHubContent')">
+                            <div class="navbox">
+                                GitHub
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="show('ContactContent')">
                             <div class="navbox">
                                 Contact
                             </div>
@@ -43,22 +53,45 @@
         </div>
     </header>
     
-
-
-
-
-    <br>
-    <br>
-    <div class="colorpalette">
-    Color Palette:
-    <p style="color:#12232E">Dark Blue:          #12232E ■</p>
-    <p style="color:#007CC7">Lighter Blue:       #007CC7 ■</p>
-    <p style="color:#4DA8DA">Lightest Blue:      #4DA8DA ■</p>
-    <p style="color:#203647">Dark Blue Shadow:   #203647 ■</p>
-    <p style="color:#EEFBFB">Light Blue Shadow:  #EEFBFB ■</p>
-    </div>
+    <!--Home Content-->
     
-    <br>
+    <div class="Content" id="HomeContent">
+
+        <h1>Tony Bodulovic</h1>
+
+        <div class="ImageContainer">
+            <div>
+                <img src="Tony.jpeg">
+            </div>
+            <div>
+                <p>Hey! Welcome to my website.</p>
+                <p>This is a demo site, for temporary use.</p>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <!--Display Home-->
+    <script>show("HomeContent")</script>
+
+    <!--Resume Content-->
+
+    <div class="Content" id="ResumeContent">
+        This is ResumeContent
+    </div>
+
+    <!--GitHub Content-->
+
+    <div class="Content" id="GitHubContent">
+        This is GitHubContent
+    </div>
+
+    <!--Contact Content-->
+
+    <div class="Content" id="ContactContent">
+        This is ContactContent
+    </div>
 
 </body>
 

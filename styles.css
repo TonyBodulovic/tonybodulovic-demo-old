@@ -2,24 +2,52 @@
 Color Palette:
 
 Dark Blue:          #12232E
-Lighter Blue:       #007CC7
-Lightest Blue:      #4DA8DA
+Light Blue:         #007CC7
+Lighter Blue:       #4DA8DA
 
 Dark Blue Shadow:   #203647
 Light Blue Shadow:  #EEFBFB
 
 */
 
+:root{
+    /*Color Scheme 1*/
+    --darkblue:#12232E;
+    --lightblue:#007CC7;
+    --lighterblue:#4DA8DA;
+    --darkblueshadow:#203647;
+    --lightblueshadow:#EEFBFB;
+
+    /*Color Scheme 2*/
+    --saphire:#0C023E;
+    --midnightblue:#1D2570;
+    --resolutionblue:#2F387B;
+    --wildblueyonder:#7991BD;
+    --manatee:#8C909C;
+
+    /*My Colors*/
+    --darkgray:#707070;
+    --lightgray:#B0B0B0;
+}
 
 body{
-    background-image: linear-gradient(to bottom,#12232E, #203647);
+    /*background-color: var(--manatee);*/
+    /*background-image: linear-gradient(to bottom,var(--darkblue),var(--darkblueshadow));*/
+    background-image: linear-gradient(to bottom,var(--lightgray),var(--darkgray));
 }
 
 header{
-    background: #007CC7;
+    background: var(--darkblueshadow);
+    width: fit-content;
     border-radius: 25px 25px 25px 25px;
-    margin:15px;
-    padding:10px;
+    /*border: 2px solid black;*/
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 nav ul{
@@ -40,7 +68,7 @@ nav li{
 
 nav a{
     font-size:30;
-    color: #EEFBFB;
+    color:var(--lighterblue);
     text-decoration: none;
 }
 
@@ -49,36 +77,51 @@ nav a{
     justify-content: center;
 }
 
-.container{
-    width:80%;
-    margin: 0 auto;
-}
-
-.image{
-    scale:100%;
-}
-
-.text{
-    font-size: 20px;
-    padding-left: 10px;
-}
-
 .navbox{
+    cursor: pointer;
     text-align: center;
     width: 150;
     padding:10;
-    border:2px solid #4DA8DA;
+    border:2px solid black;
 }
 
 .navbox:hover{
     color: black;
-    background-image:radial-gradient(white,#89CFFF);
-    transition-duration: .7s;
+    background-image:radial-gradient(var(--lighterblue),var(--lightblue));
+    transition-duration: .2s;
 }
 
+.Content{
+    display: none;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
 
-.colorpalette{
-    padding:10;
-    background-color: white;
-    font-size: 30;
+.Content h1{
+    color: var(--darkblue);
+    text-align: center;
+    font-size: 60px;
+}
+
+.Content p{
+    color:var(--darkblueshadow);
+    font-size:30px;
+}
+
+.Content img{
+    width: 100%;
+    max-width: 400;
+    height: auto;
+
+    border: 2px solid black;
+}
+
+.ImageContainer{
+    display: flex;
+    margin-block: 10px;
+}
+
+.ImageContainer div{
+    margin:10px;
 }
