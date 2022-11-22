@@ -24,11 +24,16 @@ Light Blue Shadow:  #EEFBFB
     --resolutionblue:#2F387B;
     --wildblueyonder:#7991BD;
     --manatee:#8C909C;
+
+    /*My Colors*/
+    --darkgray:#707070;
+    --lightgray:#B0B0B0;
 }
 
 body{
-    background-color: var(--manatee);
+    /*background-color: var(--manatee);*/
     /*background-image: linear-gradient(to bottom,var(--darkblue),var(--darkblueshadow));*/
+    background-image: linear-gradient(to bottom,var(--lightgray),var(--darkgray));
 }
 
 header{
