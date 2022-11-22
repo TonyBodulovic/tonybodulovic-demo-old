@@ -28,6 +28,8 @@ Light Blue Shadow:  #EEFBFB
     /*My Colors*/
     --darkgray:#707070;
     --lightgray:#B0B0B0;
+    --messageblue:#1982FC;
+    --offwhite:#FBF7F5;
 }
 
 body{
@@ -104,24 +106,32 @@ nav a{
     font-size: 60px;
 }
 
-.Content p{
-    color:var(--darkblueshadow);
-    font-size:30px;
-}
-
 .Content img{
     width: 100%;
     max-width: 400;
     height: auto;
-
     border: 2px solid var(--darkgray);
 }
 
-.ImageContainer{
+.IntroContainer{
     display: flex;
     margin-block: 10px;
 }
 
-.ImageContainer div{
+.IntroContainer div{
     margin:10px;
+}
+
+.MessageBubble{
+    
+}
+
+.MessageText p{
+    color:var(--darkblue);
+    font-size:30px;
+    background-color: var(--offwhite);
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px 20px 20px 0px;
 }
