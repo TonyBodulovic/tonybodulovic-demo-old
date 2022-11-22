@@ -86,30 +86,20 @@ nav a{
     transition-duration: .2s;
 }
 
-.colorpalette{
-    display: none;
-    padding:10;
-    background-color: lightgray;
-    border: 5px solid black;
-    font-size: 30;
-}
-
 .Content{
     display: none;
     margin-top: 30px;
     margin-left: 100px;
     margin-right: 100px;
-    font-size: 30px;
-    font-size: 30;
-    text-align: center;
 }
 
 .Content h1{
     color: var(--darkblue);
     text-align: center;
-    font-size: 60;
+    font-size: 60px;
 }
 
 .Content p{
-    color:#203647;
+    color:var(--darkblueshadow);
+    font-size:30px;
 }
