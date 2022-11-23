@@ -122,10 +122,6 @@ nav a{
     margin:10px;
 }
 
-.MessageBubble{
-    
-}
-
 .MessageText p{
     color:var(--darkblue);
     font-size:30px;
@@ -134,4 +130,8 @@ nav a{
     width: fit-content;
     height: fit-content;
     border-radius: 20px 20px 20px 0px;
+}
+
+.IntroContainer div:nth-child(odd){
+    transition: 0s;
 }
