@@ -98,6 +98,7 @@ nav a{
     margin-top: 30px;
     margin-left: 100px;
     margin-right: 100px;
+    font-size: 30px;
 }
 
 .Content h1{
@@ -124,7 +125,8 @@ nav a{
 
 .MessageText p{
     color:var(--darkblue);
-    font-size:30px;
+    font-size: 30px;
+    font-size-adjust: initial;
     background-color: var(--offwhite);
     padding: 20px;
     width: fit-content;
