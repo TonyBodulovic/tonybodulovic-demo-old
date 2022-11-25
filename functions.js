@@ -1,4 +1,4 @@
-var currentShown = "HomeContent";
+var currentShown = "";
 
 function show(id)
 {
