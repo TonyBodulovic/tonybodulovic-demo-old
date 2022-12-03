@@ -4,7 +4,6 @@
 
 body{
     background:var(--gray);
-    display: flex;
     justify-content: center;
     align-items: center;
     height:90%;
@@ -13,7 +12,8 @@ body{
 
 
 .test{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10vw;
     color:white;
-    font-size:100px;
     text-align: center;
 }
