@@ -8,29 +8,33 @@ body{
     align-items: center;
     height:90%;
     width: 90%;
+    font-family: Source Sans Pro;
 }
 
 
 .test{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 7vw;
-    color:black;
-    background-color: white;
+    position: relative;
+    font-size: 18px;
     width: fit-content;
-    margin-left: 100px;
-    margin-top: 100px;
+    max-width: 300px;
+    max-height: fit-content;
+    background: #fff;
+    border-radius: 10px;
+    padding: 24px;
     text-align: center;
+    color: #000;
 }
 
 .test::before{
     content: "";
+    width: 0px;
+    height: 0px;
     position: absolute;
-    transform: rotate(45deg);
-    translate: -3px 71px;
-    width: 0; 
-    height: 0; 
-    border-top: 20px solid transparent;
+    border-left: 24px solid #fff;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #fff;
     border-bottom: 20px solid transparent;
-    border-right: 20px solid white;
+    left: 10px;
+    bottom: -40px;
 
 }
