@@ -3,38 +3,58 @@
 }
 
 body{
-    background:var(--gray);
-    justify-content: center;
-    align-items: center;
-    height:90%;
-    width: 90%;
+
+    /* General Settings */
+    background:gray;
     font-family: Source Sans Pro;
+
+    /* Display Settings */
+    display: flex;
+    justify-content: center;
 }
 
+.Phone{
 
-.test{
-    position: relative;
-    font-size: 18px;
-    width: fit-content;
-    max-width: 300px;
-    max-height: fit-content;
-    background: #fff;
-    border-radius: 10px;
-    padding: 24px;
-    text-align: center;
-    color: #000;
+    /* Display Settings */
+
+    display: grid;
+
+     /* Phone Sizing */
+     min-width: 300px;
+     max-width: 600px;
+     width:90%;
+ 
+     /* Border Styling */
+ 
+     border-radius: 30px;
+     border-width: 10px;
+     border-color: var(--gray);
+     border-style: solid;
+
+     /* Margins */
+
+     margin-top: 2vw;
+     margin-bottom: 2vw;
+
+     margin-left: 1vw;
+     margin-right: 1vw;
+
+    /* Random */
+
+    background-color: gray;
+    font-size: 50px;
 }
 
-.test::before{
-    content: "";
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    border-left: 24px solid #fff;
-    border-right: 12px solid transparent;
-    border-top: 12px solid #fff;
-    border-bottom: 20px solid transparent;
-    left: 10px;
-    bottom: -40px;
+.Screen{
 
+    /* Margins */
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+    margin-top: 10%;
+    margin-bottom: 25%;
+
+    border-color: black;
+    background-color: white;
 }
