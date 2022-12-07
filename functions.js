@@ -10,3 +10,7 @@ function show(id)
 function hide(id){
     document.getElementById(currentShown).style.display = "none";
 }
+
+function test(){
+    document.getElementById("navbar").style.display="none";
+}
