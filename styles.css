@@ -39,11 +39,14 @@ body{
     /* Styling */
 
     background-color: var(--discord-darkgray);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
 
     /* Sizing */
 
     width: fit-content;
-    height: fit-content;
+    height: 80%;
 
     /* Padding */
 
@@ -71,15 +74,15 @@ body{
     background-color: var(--discord-lightergray);
 
     /* Sizing */
-    width: 20vmin;
-    height: 21vmin;
+    width: 18vmin;
+    height: 19vmin;
 
     /* Margin */
 
     margin-left: auto;
     margin-right: auto;
 
-    margin-bottom: 2vmin;
+    margin-bottom: 0;
     margin-top: 0;
 
     /* Padding */
@@ -126,13 +129,13 @@ body{
 
     /* Text Styling */
 
-    font-size: 5vmin;
+    font-size: 4vmin;
     color:var(--discord-lightestgray);
     text-align: center;
 
     /* Margin */
 
-    margin-bottom: 2vmin;
+    margin-bottom: 1vmin;
 
     /* Padding */
 
@@ -190,5 +193,27 @@ body{
 }
 
 .ContentBrowser{
+
+    /* Styling */
+
+    background-color: var(--discord-gray);
+
+    /* Sizing */
+
+    width: 60%;
+    height: 80%;
+
+    /* Padding */
+
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+
+    /* Margin */
+
+    margin-left: 5%;
+    margin-top: 5%;
 
 }
