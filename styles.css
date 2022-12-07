@@ -216,4 +216,8 @@ body{
     margin-left: 5%;
     margin-top: 5%;
 
+    /* Border */
+
+    box-shadow: 2vmin 2vmin var(--discord-darkgray);
+
 }
