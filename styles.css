@@ -231,6 +231,11 @@ body{
 
     background-color: var(--discord-lightgray);
 
+    /* Sizing */
+
+    width:100%;
+    height:90%;
+
     /* Margin */
 
     margin:1vw;
@@ -250,18 +255,19 @@ body{
 }
 
 .Content::-webkit-scrollbar{
+
+    /* Scrollbar background */
+
     width:1vw;
     height:auto;
 }
 
-.Content::-webkit-scrollbar-track{
-    border: solid var(--discord-darkgray);
-    border-left-width: 2vw;
-}
-
 .Content::-webkit-scrollbar-thumb{
+
+    /* Scrollbar Thumb */
+
     background: var(--discord-lightestgray);
-    border-radius: 1vw;
+    border-radius: 1vmin;
 }
 
 .Content h1{
