@@ -1,0 +1,29 @@
+-- MESSAGE BUBBLE --
+
+.test{
+    position: relative;
+    font-size: 18px;
+    width: fit-content;
+    max-width: 300px;
+    max-height: fit-content;
+    background: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+    color: #000;
+}
+
+.test::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid #fff;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #fff;
+    border-bottom: 20px solid transparent;
+    left: 10px;
+    bottom: -40px;
+
+}
+

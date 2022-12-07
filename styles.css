@@ -1,127 +1,300 @@
-/*
-Color Palette:
-
-Dark Blue:          #12232E
-Light Blue:         #007CC7
-Lighter Blue:       #4DA8DA
-
-Dark Blue Shadow:   #203647
-Light Blue Shadow:  #EEFBFB
-
+/* 
+-------- CUSTOM VARIABLES --------
 */
 
 :root{
-    /*Color Scheme 1*/
-    --darkblue:#12232E;
-    --lightblue:#007CC7;
-    --lighterblue:#4DA8DA;
-    --darkblueshadow:#203647;
-    --lightblueshadow:#EEFBFB;
 
-    /*Color Scheme 2*/
-    --saphire:#0C023E;
-    --midnightblue:#1D2570;
-    --resolutionblue:#2F387B;
-    --wildblueyonder:#7991BD;
-    --manatee:#8C909C;
+    /* Color Palettes */
 
-    /*My Colors*/
-    --darkgray:#707070;
-    --lightgray:#B0B0B0;
+    /* Discord */
+    --discord-blue:#7289da;
+    --discord-lightestgray:#99aab5;
+    --discord-lightergray:#424549;
+    --discord-lightgray:#36393e;
+    --discord-gray:#282b30;
+    --discord-darkgray:#1e2124;
+
 }
+
+/* 
+-------- BODY AND STYLING --------
+*/
 
 body{
-    /*background-color: var(--manatee);*/
-    /*background-image: linear-gradient(to bottom,var(--darkblue),var(--darkblueshadow));*/
-    background-image: linear-gradient(to bottom,var(--lightgray),var(--darkgray));
+
+    /* Page Style Settings */
+    background:var(--discord-lightergray);
+    font-family: Source Sans Pro;
+
+    /* Page Display Settings */
+    display: flex;
 }
 
-header{
-    background: var(--darkblueshadow);
+/* 
+-------- NAVIGATION MENU --------
+*/
+
+.NavigationBar{
+
+    /* Styling */
+
+    background-color: var(--discord-darkgray);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+
+    /* Sizing */
+
     width: fit-content;
-    border-radius: 25px 25px 25px 25px;
-    /*border: 2px solid black;*/
-    margin:auto;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 50px;
-    padding-right: 50px;
+    height: 80%;
+
+    /* Padding */
+
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+
+    /* Margin */
+
+    margin-left: 10%;
+    margin-top: 5%;
+
+    /* Border */
+
+    box-shadow: 0 0 1vmin var(--discord-lightestgray);
+
 }
 
-nav ul{
-    margin:0;
+
+.ProfileImage{
+
+    /* Styling */
+    background-color: var(--discord-lightergray);
+
+    /* Sizing */
+    width: 18vmin;
+    height: 19vmin;
+
+    /* Margin */
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 0;
+    margin-top: 0;
+
+    /* Padding */
+
     padding: 0;
-    display:flex;
+
+    /* Border Styling */
+
+    border-style: solid;
+    border-color: var(--discord-blue);
+    border-radius: 50%;
+
+    /* Disable Selection */
+
+    user-select: none;
+
 }
 
-nav li:first-child{
-    display:inline-table;
-    margin:0
+.ProfileImage img{
+
+    /* Sizing */
+
+    width: 100%;
+    height: 100%;
+
+    /* Margin */
+
+    margin: 0;
+
+    border-radius: 50%;
+
+    /* Disable Selection */
+
+    pointer-events: none;
+
 }
 
-nav li{
-    display: inline-table;
-    margin-left: -2;
-}
+.NavigationItem{
+    
+    /* Border Styling */
 
-nav a{
-    font-size:30;
-    color:var(--lighterblue);
-    text-decoration: none;
-}
+    border-bottom: none;
+    border-top:none;
 
-.navcontainer{
-    display:flex;
-    justify-content: center;
-}
+    /* Text Styling */
 
-.navbox{
-    cursor: pointer;
+    font-size: 4vmin;
+    color:var(--discord-lightestgray);
     text-align: center;
-    width: 150;
-    padding:10;
-    border:2px solid black;
+
+    /* Margin */
+
+    margin-bottom: 1vmin;
+
+    /* Padding */
+
+    padding: 1vw;
+
+    /* Background*/
+
+    background: linear-gradient(to right, var(--discord-gray) 50%, var(--discord-darkgray) 50%) right;
+    background-size: 210% 100%;
+
+    /* Transition */
+
+    transition: background-position 1s ease-in-out, color 1s ease;
+
+    /* Disable Selection */
+
+    user-select: none;
+
 }
 
-.navbox:hover{
-    color: black;
-    background-image:radial-gradient(var(--lighterblue),var(--lightblue));
-    transition-duration: .2s;
+.NavigationItem:last-child{
+
+    /* Last Child Info */
+    margin-bottom: 0px;
+
 }
+
+.NavigationItem:hover{
+
+    /* Hover Style */
+
+    cursor: pointer;
+
+    /* Background */
+
+    background-position: left bottom;
+
+    /* Text */
+
+    color:white;
+
+    /* Transition */
+
+    transition: background-position 500ms ease, color 500ms ease;
+
+}
+
+.NavigationItem::before{
+    border: 10px solid black;
+    font-size: 1px;
+    height: 2px;
+    content: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ContentBrowser{
+
+    /* Styling */
+
+    background-color: var(--discord-darkgray);
+    display: flex;
+
+    /* Sizing */
+
+    width: 65%;
+    height: 80%;
+
+    /* Padding */
+
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+
+    /* Margin */
+
+    margin-left: 2.5%;
+    margin-right:2.5%;
+    margin-top: 5%;
+
+    /* Border */
+
+    box-shadow: 2vmin 2vmin black;
+
+}
+
 
 .Content{
-    display: none;
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
+
+    /* Styling */
+
+    background-color: var(--discord-lightgray);
+
+    /* Margin */
+
+    margin:1vw;
+
+    /* Padding */
+
+    padding: 2vmin;
+
+    /* Border */
+
+    border-radius: 1vmin;
+
+    /* Scrollbar */
+
+    overflow-y: scroll;
+
+}
+
+.Content::-webkit-scrollbar{
+    width:1vw;
+    height:auto;
+}
+
+.Content::-webkit-scrollbar-track{
+    border: solid var(--discord-darkgray);
+    border-left-width: 2vw;
+}
+
+.Content::-webkit-scrollbar-thumb{
+    background: var(--discord-lightestgray);
+    border-radius: 1vw;
 }
 
 .Content h1{
-    color: var(--darkblue);
+
+    /* Styling */
+
+    font-size: 5vmin;
+    font-weight: bolder;
     text-align: center;
-    font-size: 60px;
+    color: var(--discord-blue);
+
+    /* Padding */
+
+    padding-bottom: 1vw;
+
+    /* Border */
+
+    border-bottom: 1vmin ridge var(--discord-lightestgray);
+
 }
 
 .Content p{
-    color:var(--darkblueshadow);
-    font-size:30px;
-}
 
-.Content img{
-    width: 100%;
-    max-width: 400;
-    height: auto;
+    /* Styling */
 
-    border: 2px solid var(--darkgray);
-}
+    font-size: 2vmin;
+    text-align: left;
+    color: white;
+    text-indent: 1vw;
 
-.ImageContainer{
-    display: flex;
-    margin-block: 10px;
-}
+    /* Padding */
 
-.ImageContainer div{
-    margin:10px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+
 }

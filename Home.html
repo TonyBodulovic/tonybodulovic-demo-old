@@ -3,95 +3,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv='cache-control' content='no-cache'> 
-    <meta http-equiv='expires' content='0'> 
-    <meta http-equiv='pragma' content='no-cache'>
     <title>Tony's Demo Site</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <script type="text/javascript" src="functions.js"></script>
 </head>
 
 <body>
-
-    <!--Navigation Bar-->
-
-    <header>
-        <div class="navcontainer">
-            <nav>
-                <ul>
-                    <li>
-                        <a onclick="show('HomeContent')">
-                            <div class="navbox">
-                                Home
-                            </div>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a onclick="show('ResumeContent')">
-                            <div class="navbox">
-                                Resume
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a onclick="show('GitHubContent')">
-                            <div class="navbox">
-                                GitHub
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a onclick="show('ContactContent')">
-                            <div class="navbox">
-                                Contact
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
     
-    <!--Home Content-->
-    
-    <div class="Content" id="HomeContent">
-
-        <h1>Tony Bodulovic</h1>
-
-        <div class="ImageContainer">
-            <div>
-                <img src="Tony.jpeg">
-            </div>
-            <div>
-                <p>Hey! Welcome to my website.</p>
-                <p>This is a demo site, for temporary use.</p>
-            </div>
+    <div class="NavigationBar" id="navbar">
+        <div class="ProfileImage">
+            <img src="Tony RemovedBG HD Cropped.png" class="testImage">
         </div>
-        
-        
+        <div class="NavigationItem">
+            About Me
+        </div>
+        <div class="NavigationItem">
+            Resume
+        </div>
+        <div class="NavigationItem">
+            Contact
+        </div>
+        <div class="NavigationItem">
+            Portfolio
+        </div>
     </div>
 
-    <!--Display Home-->
-    <script>show("HomeContent")</script>
-
-    <!--Resume Content-->
-
-    <div class="Content" id="ResumeContent">
-        This is ResumeContent
-    </div>
-
-    <!--GitHub Content-->
-
-    <div class="Content" id="GitHubContent">
-        This is GitHubContent
-    </div>
-
-    <!--Contact Content-->
-
-    <div class="Content" id="ContactContent">
-        This is ContactContent
-    </div>
+    <div class="ContentBrowser">
+        <div class="Content" id="AboutMe">
+            <h1>About Me</h1>
+            <p>
+                Hey! My name is Tony, and welcome to my website!
+            </p>
+            <p>
+                Duis felis metus, placerat eget efficitur vel, maximus sit amet enim. Suspendisse semper leo eu neque vulputate, at commodo odio dignissim. In viverra justo a est tempor commodo. Maecenas ultricies maximus ipsum, in luctus lorem. Suspendisse ipsum dolor, venenatis sed dignissim sed, malesuada ac turpis. Maecenas eget tellus ipsum. Sed vitae eros viverra, hendrerit ex in, lacinia ante. Nunc nec dignissim est, eget fermentum massa.
+            </p>
+        </div>
+    </div>    
 
 </body>
 
