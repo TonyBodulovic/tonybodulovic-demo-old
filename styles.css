@@ -4,57 +4,11 @@
 
 body{
 
-    /* General Settings */
+    /* Style Settings */
     background:gray;
     font-family: Source Sans Pro;
 
     /* Display Settings */
     display: flex;
     justify-content: center;
-}
-
-.Phone{
-
-    /* Display Settings */
-
-    display: grid;
-
-     /* Phone Sizing */
-     min-width: 300px;
-     max-width: 600px;
-     width:90%;
- 
-     /* Border Styling */
- 
-     border-radius: 30px;
-     border-width: 10px;
-     border-color: var(--gray);
-     border-style: solid;
-
-     /* Margins */
-
-     margin-top: 2vw;
-     margin-bottom: 2vw;
-
-     margin-left: 1vw;
-     margin-right: 1vw;
-
-    /* Random */
-
-    background-color: gray;
-    font-size: 50px;
-}
-
-.Screen{
-
-    /* Margins */
-
-    margin-left: 10%;
-    margin-right: 10%;
-
-    margin-top: 10%;
-    margin-bottom: 25%;
-
-    border-color: black;
-    background-color: white;
 }
