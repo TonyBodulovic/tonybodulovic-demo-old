@@ -196,11 +196,12 @@ body{
 
     /* Styling */
 
-    background-color: var(--discord-gray);
+    background-color: var(--discord-darkgray);
+    display: flex;
 
     /* Sizing */
 
-    width: 60%;
+    width: 65%;
     height: 80%;
 
     /* Padding */
@@ -213,11 +214,87 @@ body{
 
     /* Margin */
 
-    margin-left: 5%;
+    margin-left: 2.5%;
+    margin-right:2.5%;
     margin-top: 5%;
 
     /* Border */
 
-    box-shadow: 2vmin 2vmin var(--discord-darkgray);
+    box-shadow: 2vmin 2vmin black;
+
+}
+
+
+.Content{
+
+    /* Styling */
+
+    background-color: var(--discord-lightgray);
+
+    /* Margin */
+
+    margin:1vw;
+
+    /* Padding */
+
+    padding: 2vmin;
+
+    /* Border */
+
+    border-radius: 1vmin;
+
+    /* Scrollbar */
+
+    overflow-y: scroll;
+
+}
+
+.Content::-webkit-scrollbar{
+    width:1vw;
+    height:auto;
+}
+
+.Content::-webkit-scrollbar-track{
+    border: solid var(--discord-darkgray);
+    border-left-width: 2vw;
+}
+
+.Content::-webkit-scrollbar-thumb{
+    background: var(--discord-lightestgray);
+    border-radius: 1vw;
+}
+
+.Content h1{
+
+    /* Styling */
+
+    font-size: 5vmin;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--discord-blue);
+
+    /* Padding */
+
+    padding-bottom: 1vw;
+
+    /* Border */
+
+    border-bottom: 1vmin ridge var(--discord-lightestgray);
+
+}
+
+.Content p{
+
+    /* Styling */
+
+    font-size: 2vmin;
+    text-align: left;
+    color: white;
+    text-indent: 1vw;
+
+    /* Padding */
+
+    padding-left: 1vw;
+    padding-right: 1vw;
 
 }
