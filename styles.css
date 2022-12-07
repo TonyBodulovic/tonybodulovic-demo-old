@@ -13,7 +13,7 @@
 body{
 
     /* Style Settings */
-    background:gray;
+    background:var(--discord-lightgray);
     font-family: Source Sans Pro;
 
     /* Display Settings */
