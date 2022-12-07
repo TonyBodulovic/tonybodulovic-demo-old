@@ -1,5 +1,13 @@
 :root{
-    --gray:#333333;
+    /* Color Palettes */
+
+    /* Discord */
+    --discord-blue:#7289da;
+    --discord-lightergray:#424549;
+    --discord-lightgray:#36393e;
+    --discord-gray:#282b30;
+    --discord-darkgray:#1e2124;
+
 }
 
 body{
