@@ -250,10 +250,6 @@ body{
 
     overflow-y: scroll;
 
-
-
-    transition: 2s;
-
 }
 
 .Content::-webkit-scrollbar{
