@@ -11,36 +11,66 @@
 
 <body>
     
+    <!-- Navigation Bar -->
+
     <div class="NavigationBar">
         <div class="ProfileImage">
             <img src="Tony RemovedBG HD Cropped.png">
         </div>
-        <div class="NavigationItem">
+        <div class="NavigationItem" id="AboutMeNav" onclick="showContent(this.id,'AboutMeContent')">
             About Me
         </div>
-        <div class="NavigationItem">
+        <div class="NavigationItem" id="ResumeNav" onclick="showContent(this.id,'ResumeContent')">
             Resume
         </div>
-        <div class="NavigationItem">
+        <div class="NavigationItem" id="ContactNav" onclick="showContent(this.id,'ContactContent')">
             Contact
         </div>
-        <div class="NavigationItem">
+        <div class="NavigationItem" id="PortfolioNav" onclick="showContent(this.id,'PortfolioContent')">
             Portfolio
         </div>
     </div>
 
+    <!-- Content Browser -->
+
     <div class="ContentBrowser">
-        <div class="Content" id="AboutMe">
+
+        <!-- About Me Content -->
+
+        <div class="Content" id="AboutMeContent" hidden>
             <h1>About Me</h1>
             <p>
                 Hey! My name is Tony, and welcome to my website!
             </p>
-            <p shown>
-                I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!I've recently earned my B.Sc in Computer Science, and I'm looking for a developer job to kickstart my career!
+            <p>
+                I'm a 22 year old born in Mississauga, Ontario, Canada.
             </p>
         </div>
+
+        <!-- Resume Content -->
+
+        <div class="Content" id="ResumeContent" hidden>
+            <h1>Resume</h1>
+        </div>
+
+        <!-- Contact Content -->
+
+        <div class="Content" id="ContactContent" hidden>
+            <h1>Contact</h1>
+        </div>
+
     </div>    
 
 </body>
+
+<script>
+
+    // Setting Up defaults
+
+    var  currentShownContent = 'AboutMeContent';
+    var currentSelectedNav = 'AboutMeNav';
+    showContent(currentSelectedNav,currentShownContent);
+
+</script>
 
 </html>

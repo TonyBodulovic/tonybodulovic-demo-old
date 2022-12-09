@@ -1,16 +1,25 @@
-var currentShown = "";
+// Show and Hide Content Functions
 
-function show(id)
-{
-    hide(currentShown);
-    document.getElementById(id).style.display = "block";
-    currentShown=id;
+function showContent(navID,contentID)
+{   
+    hideContent(currentShownContent);
+    selectNavigationItem(navID);
+    document.getElementById(contentID).hidden = false;
+    currentShownContent=contentID;
 }
 
-function hide(id){
-    document.getElementById(currentShown).style.display = "none";
+function hideContent(contentID){
+    document.getElementById(contentID).hidden = true;
 }
 
-function test(){
-    document.getElementById("navbar").style.display="none";
+// Set Navigation Index Functions
+
+function selectNavigationItem(navID){
+    deselectNavigationItem(currentSelectedNav);
+    document.getElementById(navID).classList.add("NavigationItemSelected");
+    currentSelectedNav=navID;
+}
+
+function deselectNavigationItem(navID){
+    document.getElementById(navID).classList.remove("NavigationItemSelected");
 }

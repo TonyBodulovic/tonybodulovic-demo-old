@@ -183,13 +183,10 @@ body{
 
 }
 
-.NavigationItem::before{
-    border: 10px solid black;
-    font-size: 1px;
-    height: 2px;
-    content: none;
-    margin: 0;
-    padding: 0;
+.NavigationItemSelected{
+    border-bottom-width: 0.5vmin;
+    border-bottom-style: solid;
+    border-bottom-color: var(--discord-blue);
 }
 
 .ContentBrowser{
@@ -227,6 +224,7 @@ body{
 
 .Content{
 
+    
     /* Styling */
 
     background-color: var(--discord-lightgray);
@@ -251,6 +249,10 @@ body{
     /* Scrollbar */
 
     overflow-y: scroll;
+
+
+
+    transition: 2s;
 
 }
 
@@ -294,7 +296,6 @@ body{
     /* Styling */
 
     font-size: 2vmin;
-    text-align: left;
     color: white;
     text-indent: 1vw;
 
