@@ -4,12 +4,12 @@ function showContent(navID,contentID)
 {   
     hideContent(currentShownContent);
     selectNavigationItem(navID);
-    document.getElementById(contentID).hidden = false;
+    document.getElementById(contentID).classList.remove("ContentHidden");
     currentShownContent=contentID;
 }
 
 function hideContent(contentID){
-    document.getElementById(contentID).hidden = true;
+    document.getElementById(contentID).classList.add("ContentHidden");
 }
 
 // Set Navigation Index Functions
@@ -72,3 +72,8 @@ function deselectNavigationItem(navID){
 //     }
 
 // }
+
+//Other
+
+//  document.getElementById(contentID).style.animation = "FadeIn 1s";
+//  document.getElementById(contentID).hidden = true;

@@ -17,7 +17,7 @@
         <div class="ProfileImage">
             <img src="Tony RemovedBG HD Cropped.png">
         </div>
-        <div class="NavigationItem" id="AboutMeNav" onclick="showContent(this.id,'AboutMeContent')">
+        <div class="NavigationItem NavigationItemSelected" id="AboutMeNav" onclick="showContent(this.id,'AboutMeContent')">
             About Me
         </div>
         <div class="NavigationItem" id="ResumeNav" onclick="showContent(this.id,'ResumeContent')">
@@ -37,7 +37,7 @@
 
         <!-- About Me Content -->
 
-        <div class="Content" id="AboutMeContent" hidden>
+        <div class="Content" id="AboutMeContent">
             <h1>About Me</h1>
             <p>
                 Hey! My name is Tony, and welcome to my website!
@@ -45,18 +45,25 @@
             <p>
                 I'm a 22 year old born in Mississauga, Ontario, Canada.
             </p>
+            
         </div>
 
         <!-- Resume Content -->
 
-        <div class="Content" id="ResumeContent" hidden>
+        <div class="Content ContentHidden" id="ResumeContent">
             <h1>Resume</h1>
         </div>
 
         <!-- Contact Content -->
 
-        <div class="Content" id="ContactContent" hidden>
+        <div class="Content ContentHidden" id="ContactContent">
             <h1>Contact</h1>
+        </div>
+
+        <!-- Portfolio Content -->
+
+        <div class="Content ContentHidden" id="PortfolioContent">
+            <h1>Portfolio</h1>
         </div>
 
     </div>    
@@ -69,7 +76,7 @@
 
     var  currentShownContent = 'AboutMeContent';
     var currentSelectedNav = 'AboutMeNav';
-    showContent(currentSelectedNav,currentShownContent);
+    //showContent(currentSelectedNav,currentShownContent);
 
 </script>
 
