@@ -260,7 +260,7 @@ body{
 
     /* Transition */
 
-    transition: border-radius 1s, opacity 0s, scale 1s;
+    transition: border-radius 1s, opacity 0s, scale 500ms;
 
 
 }
@@ -330,6 +330,84 @@ body{
     transition: border-radius 1s, opacity 1s, scale 500ms;
 
 }
+
+.MessageBubble{
+
+    /* Position */
+
+    position: relative;
+
+    /* Styling */
+
+    background-color: var(--discord-darkgray);
+    box-shadow: 1vmin 1vmin 0.5vmin var(--discord-gray);
+
+    /* Sizing */
+
+    width: fit-content;
+
+    /* Border */
+
+    border-radius: 20px;
+
+    /* Padding */
+
+    padding-top: 0.25vmin;
+    padding-bottom: 0.1vmin;
+
+    /* Margin */
+
+    margin: 4vmin;
+}
+
+.MessageBubble::before{
+
+    /* Positioning */
+
+    position: absolute;
+    float: left;
+    content: "";
+    width:0;
+    height: 0;
+
+    top: 100%;
+    left: 5%;
+
+    /* Styling */
+
+    border-right: 2vmin solid transparent;
+    border-left: 2vmin solid var(--discord-darkgray);
+    border-bottom: 2vmin solid transparent;
+}
+
+.MessageBubble p{
+
+    /* Styling */
+
+    font-size: 2vmin;
+
+}
+
+.MessageBubble a{
+
+    /* Styling */
+
+    text-decoration:none;
+    color: var(--discord-blue);
+
+    /* Border */
+
+    border: 1px solid black;
+
+}
+
+
+@keyframes jumping{
+    0%{transform: translate(-1vmin);}
+    50%{transform: translate(1vmin);}
+    100%{transform: translate(-1vmin);}
+}
+
 
 @keyframes FadeIn{
     0%{
