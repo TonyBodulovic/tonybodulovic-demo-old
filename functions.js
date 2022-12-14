@@ -1,16 +1,79 @@
-var currentShown = "";
+// Show and Hide Content Functions
 
-function show(id)
-{
-    hide(currentShown);
-    document.getElementById(id).style.display = "block";
-    currentShown=id;
+function showContent(navID,contentID)
+{   
+    hideContent(currentShownContent);
+    selectNavigationItem(navID);
+    document.getElementById(contentID).classList.remove("ContentHidden");
+    currentShownContent=contentID;
 }
 
-function hide(id){
-    document.getElementById(currentShown).style.display = "none";
+function hideContent(contentID){
+    document.getElementById(contentID).classList.add("ContentHidden");
 }
 
-function test(){
-    document.getElementById("navbar").style.display="none";
+// Set Navigation Index Functions
+
+function selectNavigationItem(navID){
+    deselectNavigationItem(currentSelectedNav);
+    document.getElementById(navID).classList.add("NavigationItemSelected");
+    currentSelectedNav=navID;
 }
+
+function deselectNavigationItem(navID){
+    document.getElementById(navID).classList.remove("NavigationItemSelected");
+}
+
+
+// This does not work.
+
+// // Opacity Animation
+
+// function fadeIn(elementID){
+
+//     let opacity = 0; //Starting Opacity
+//     let opacityinterval = 0.005; //Increment of Opacity
+    
+//     let animationtimer = 1 //Milliseconds
+
+//     document.getElementById(elementID).style.opacity=0;
+
+//     animation = setInterval(animate,animationtimer);
+
+//     function animate(){
+//         if (opacity>=1){
+//             clearInterval(animation);
+//         }else{
+//             opacity+=opacityinterval;
+//             document.getElementById(elementID).style.opacity = opacity;
+//         }
+//     }
+
+// }
+
+// function fadeOut(elementID){
+
+//     let opacity = 1; //Starting Opacity
+//     let opacityinterval = 0.1; //Decrement of Opacity
+    
+//     let animationtimer = 10 //Milliseconds
+
+//     document.getElementById(elementID).style.opacity=1;
+
+//     animation = setInterval(animate,animationtimer);
+
+//     function animate(){
+//         if (opacity<0){
+//             clearInterval(animation);
+//         }else{
+//             opacity-=opacityinterval;
+//             document.getElementById(elementID).style.opacity = opacity;
+//         }
+//     }
+
+// }
+
+//Other
+
+//  document.getElementById(contentID).style.animation = "FadeIn 1s";
+//  document.getElementById(contentID).hidden = true;

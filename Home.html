@@ -11,36 +11,89 @@
 
 <body>
     
-    <div class="NavigationBar" id="navbar">
+    <!-- Navigation Bar -->
+
+    <div class="NavigationBar">
         <div class="ProfileImage">
-            <img src="Tony RemovedBG HD Cropped.png" class="testImage">
+            <img src="Tony RemovedBG HD Cropped.png">
         </div>
-        <div class="NavigationItem">
+        <div class="NavigationItem NavigationItemSelected" id="AboutMeNav" onclick="showContent(this.id,'AboutMeContent')">
             About Me
         </div>
-        <div class="NavigationItem">
+        <div class="NavigationItem" id="ResumeNav" onclick="showContent(this.id,'ResumeContent')">
             Resume
         </div>
-        <div class="NavigationItem">
+        <div class="NavigationItem" id="ContactNav" onclick="showContent(this.id,'ContactContent')">
             Contact
         </div>
-        <div class="NavigationItem">
+        <div class="NavigationItem" id="PortfolioNav" onclick="showContent(this.id,'PortfolioContent')">
             Portfolio
         </div>
     </div>
 
+    <!-- Content Browser -->
+
     <div class="ContentBrowser">
-        <div class="Content" id="AboutMe">
+
+        <!-- About Me Content -->
+
+        <div class="Content" id="AboutMeContent">
             <h1>About Me</h1>
-            <p>
-                Hey! My name is Tony, and welcome to my website!
-            </p>
-            <p>
-                Duis felis metus, placerat eget efficitur vel, maximus sit amet enim. Suspendisse semper leo eu neque vulputate, at commodo odio dignissim. In viverra justo a est tempor commodo. Maecenas ultricies maximus ipsum, in luctus lorem. Suspendisse ipsum dolor, venenatis sed dignissim sed, malesuada ac turpis. Maecenas eget tellus ipsum. Sed vitae eros viverra, hendrerit ex in, lacinia ante. Nunc nec dignissim est, eget fermentum massa.
-            </p>
+            <div class="ChatBox">
+                <div class="ChatBoxImageHolder">
+                    <img src="Template.JPG">
+                </div>
+                <div class="Chat">
+                    <div class="MessageBubble">
+                        <p>
+                            Hey! My name is Tony, and welcome to my website! I'm a 22 year old born in Mississauga, Ontario, Canada. Currently I'm looking for an entry-level developer position to start my career.
+                        </p>
+                    </div>
+                    <div class="MessageBubble">
+                        <p>
+                            Please take a look around, check out my resume, my portfolio, or view my contact page to see how you can reach me.
+                        </p>
+                    </div>
+                    <div class="MessageBubble">
+                        <p>
+                            The source code for this site is available on my GitHub, or click <a href="https://github.com/TonyBodulovic/tonybodulovic-demo-old">here!</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
+            
+
+        <!-- Resume Content -->
+
+        <div class="Content ContentHidden" id="ResumeContent">
+            <h1>Resume</h1>
+        </div>
+
+        <!-- Contact Content -->
+
+        <div class="Content ContentHidden" id="ContactContent">
+            <h1>Contact</h1>
+        </div>
+
+        <!-- Portfolio Content -->
+
+        <div class="Content ContentHidden" id="PortfolioContent">
+            <h1>Portfolio</h1>
+        </div>
+
     </div>    
 
 </body>
+
+<script>
+
+    // Setting Up defaults
+
+    var  currentShownContent = 'AboutMeContent';
+    var currentSelectedNav = 'AboutMeNav';
+    //showContent(currentSelectedNav,currentShownContent);
+
+</script>
 
 </html>
