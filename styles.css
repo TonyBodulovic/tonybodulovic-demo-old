@@ -234,6 +234,7 @@ body{
 
     background-color: var(--discord-lightgray);
     position: absolute;
+    display: flex;
 
     /* Sizing */
     width:90%;
