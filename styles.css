@@ -411,7 +411,7 @@ body{
     /* Sizing */
 
     width: 50vmin;
-    height: fit-content;
+    height: auto;
 
     border: 2px solid black;
 }
