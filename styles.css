@@ -425,6 +425,12 @@ body{
 
 }
 
+@media only screen and (max-width: 1026px){
+    .ChatBoxImageHolder{
+        display: none;
+    }
+}
+
 .Chat{
 
     /* Margin */
