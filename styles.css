@@ -411,7 +411,7 @@ body{
     /* Sizing */
 
     width: 50vmin;
-    height: auto;
+    height: fit-content;
 
     border: 2px solid black;
 }
@@ -421,7 +421,7 @@ body{
     /* Sizing */
 
     width: 100%;
-    height: 100%;
+    height: auto;
 
 }
 
