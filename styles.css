@@ -59,7 +59,7 @@ body{
 
     /* Margin */
 
-    margin-left: 10%;
+    margin-left: 5%;
     margin-top: 5%;
 
     /* Border */
@@ -201,7 +201,7 @@ body{
 
     /* Sizing */
 
-    width: 65%;
+    width: 67%;
     height: 80vh;
 
     /* Padding */
@@ -411,7 +411,7 @@ body{
     /* Sizing */
 
     width: 50vmin;
-    height: auto;
+    height: fit-content;
 
     border: 2px solid black;
 }
@@ -421,7 +421,7 @@ body{
     /* Sizing */
 
     width: 100%;
-    height: 100%;
+    height: auto;
 
 }
 
