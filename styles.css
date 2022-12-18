@@ -1,10 +1,31 @@
 /* 
--------- CUSTOM VARIABLES --------
+----------------------------------------------------------------------------
+This section is to keep track of my vscode extension for colorful comments.
+
+! Red
+
+? Blue
+
+& Pink
+
+^ Yellow
+
+* Green
+
+~ Purple
+
+TODO Orange
+
+// Gray/Crossed
+
+----------------------------------------------------------------------------
 */
+
+/* ! Root Variables ! */
 
 :root{
 
-    /* Color Palettes */
+    /* Color Pallets */
 
     /* Discord */
     --discord-blue:#7289da;
@@ -16,40 +37,34 @@
 
 }
 
-/* DOCUMENT STYLING */
+/* ! HTML and Body */
+
 html{
+    font-family: Source Sans Pro;
+
     margin: 0;
     padding: 0;
 }
 
-/* 
--------- BODY AND STYLING --------
-*/
-
 body{
-
-    /* Page Style Settings */
-    background:var(--discord-lightergray);
-    font-family: Source Sans Pro;
-    overflow: hidden;
-
-    /* Page Display Settings */
     display: flex;
+
+    background:var(--discord-lightergray);
 
     padding:0;
     margin: 0;
+
+    overflow: hidden;
 }
 
 @media (max-width:650px) {
     body{
-        background-color: var(--discord-darkgray);
         display: block;
+        background-color: var(--discord-darkgray);
     }
 }
 
-/* 
--------- NAVIGATION MENU --------
-*/
+/* ! Navigation Menu ! */
 
 
 .NavigationBar{
@@ -71,13 +86,13 @@ body{
     padding-left: 2vw;
     padding-right: 2vw;
 
-    padding-top: 1vw;
-    padding-bottom: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 
     /* Margin */
 
-    margin-left: 5%;
-    margin-top: 5%;
+    margin-left: 10vh;
+    margin-top: 10vh;
 
     /* Border */
 
@@ -92,14 +107,14 @@ body{
 
         flex-direction: row;
 
-        width: fit-content;
+        width: 95vw;
         height: fit-content;
 
         margin-right:0px;
         margin-left:0px;
         margin-top: 0px;
 
-        justify-content: space-around;
+        justify-content: space-between;
 
         box-shadow: none;
     }
@@ -116,8 +131,8 @@ body{
 
     /* Margin */
 
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
 
     margin-bottom: 0;
     margin-top: 0;
@@ -155,7 +170,7 @@ body{
 
     margin: 0;
 
-    border-radius: 50%;
+    border-radius: 100%;
 
     /* Disable Selection */
 
@@ -258,7 +273,7 @@ body{
 
     margin-left: 2.5vw;
     margin-right:2.5vw;
-    margin-top: 5vh;
+    margin-top: 10vh;
 
     /* Border */
 
