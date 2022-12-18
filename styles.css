@@ -16,6 +16,12 @@
 
 }
 
+/* DOCUMENT STYLING */
+html{
+    margin: 0;
+    padding: 0;
+}
+
 /* 
 -------- BODY AND STYLING --------
 */
@@ -29,11 +35,22 @@ body{
 
     /* Page Display Settings */
     display: flex;
+
+    padding:0;
+    margin: 0;
+}
+
+@media (max-width:650px) {
+    body{
+        background-color: var(--discord-darkgray);
+        display: block;
+    }
 }
 
 /* 
 -------- NAVIGATION MENU --------
 */
+
 
 .NavigationBar{
 
@@ -41,7 +58,7 @@ body{
 
     background-color: var(--discord-darkgray);
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     justify-content: space-evenly;
 
     /* Sizing */
@@ -68,6 +85,25 @@ body{
 
 }
 
+@media (max-width: 650px){
+    .NavigationBar{
+
+        /* Styling */
+
+        flex-direction: row;
+
+        width: fit-content;
+        height: fit-content;
+
+        margin-right:0px;
+        margin-left:0px;
+        margin-top: 0px;
+
+        justify-content: space-around;
+
+        box-shadow: none;
+    }
+}
 
 .ProfileImage{
 
@@ -100,6 +136,12 @@ body{
 
     user-select: none;
 
+}
+
+@media (max-width:650px){
+    .ProfileImage{
+        display: none;
+    }
 }
 
 .ProfileImage img{
@@ -195,13 +237,13 @@ body{
     /* Styling */
 
     background-color: var(--discord-darkgray);
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
-    position: relative;
 
     /* Sizing */
 
-    width: 67%;
+    width: 67vw;
     height: 80vh;
 
     /* Padding */
@@ -209,14 +251,14 @@ body{
     padding-left: 2vw;
     padding-right: 2vw;
 
-    padding-top: 1vw;
-    padding-bottom: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 
     /* Margin */
 
-    margin-left: 2.5%;
-    margin-right:2.5%;
-    margin-top: 5%;
+    margin-left: 2.5vw;
+    margin-right:2.5vw;
+    margin-top: 5vh;
 
     /* Border */
 
@@ -228,17 +270,30 @@ body{
 
 }
 
+@media (max-width:650px){
+    .ContentBrowser{
+        width:auto;
+        height: fit-content;
+        margin:0;
+        margin-top: 1%;
+        padding:0;
+        box-shadow: none;
+    }
+}
+
 .Content{
+
+    grid-row-start: 1;
+    grid-column-start: 1;
 
     /* Styling */
 
     background-color: var(--discord-lightgray);
-    position: absolute;
     display: block;
 
     /* Sizing */
-    width:90%;
-    height:85%;
+    width:fit-content;
+    height:auto;
 
     /* Margin */
 
@@ -264,6 +319,17 @@ body{
     transition: border-radius 1s, opacity 0s, scale 500ms;
 
 
+}
+
+@media (max-width:650px) {
+    .Content{
+        margin: 0;
+        padding: 0;
+        width: 95vw;
+        min-height: 20vh;
+        height: fit-content;
+        justify-self: center;
+    }
 }
 
 .Content::-webkit-scrollbar{
@@ -362,7 +428,7 @@ body{
 
 }
 
-.MessageBubble::before{
+.MessageBubble::after{
 
     /* Positioning */
 
@@ -425,7 +491,7 @@ body{
 
 }
 
-@media only screen and (max-width: 1026px){
+@media (max-width: 1250px){
     .ChatBoxImageHolder{
         display: none;
     }
@@ -437,6 +503,14 @@ body{
 
     margin-left: 4vmin;
 
+    padding: 1vmin;
+
+}
+
+@media (max-width: 1250px){
+    .Chat{
+        margin: 1vw;
+    }
 }
 
 @keyframes jumping{
